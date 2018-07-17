@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description">
+  <meta name="author" content="Sanjay Singh Bisht">
+  <title> Proteus Impact Study</title>
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <link href="css/ionicons.css" rel="stylesheet">
+  <link href="css/toggles-full.css" rel="stylesheet">
+  <link href="css/jquery.timepicker.css" rel="stylesheet">
+  <link href="css/spectrum.css" rel="stylesheet">
+  <link href="css/bootstrap-tagsinput.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/slim.css">
+  <link rel="stylesheet" href="css/bootstrap-tokenfield.css">
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+  <div class="slim-header">
+    <div class="container">
+      <div class="slim-header-left">
+        <h2 class="slim-logo">
+          <a href="index.html">Proteus
+          </a>
+        </h2>
+      </div>
+      <div class="slim-header-right">
+        <div class="dropdown dropdown-c">
+          <a href="#" class="logged-user" data-toggle="dropdown">
+            <img src="img/User.jpg" alt="">
+            <span>Username</span>
+            <i class="fa fa-angle-down"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <nav class="nav">
+              <a href="page-profile.html" class="nav-link">
+                <i class="icon ion-person"></i> View Profile</a>
+              <a href="page-edit-profile.html" class="nav-link">
+                <i class="icon ion-compose"></i> Edit Profile</a>
+              <a href="page-activity.html" class="nav-link">
+                <i class="icon ion-ios-bolt"></i> Activity Log</a>
+              <a href="page-settings.html" class="nav-link">
+                <i class="icon ion-ios-gear"></i> Account Settings</a>
+              <a href="page-signin.html" class="nav-link">
+                <i class="icon ion-forward"></i> Sign Out</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slim-navbar">
+    <div class="container">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="ImpactStudyList.html">
+            <i class="icon ion-ios-list"></i>
+            <span>List of Impact Studies</span>
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="ImpactStudyForm.html">
+            <i class="icon ion-ios-paper"></i>
+            <span>Impact Study Form</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="slim-mainpanel">
+    <div class="container">
+      <div class="slim-pageheader" style="flex-direction: row">
+        <!-- <ol class="breadcrumb slim-breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#">Forms</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Form Elements</li>
+        </ol> -->
+        <h6 class="slim-pagetitle">Proteus Impact Study</h6>
+      </div>
+      <div class="section-wrapper">
+        <!-- <label class="section-title">Basic Form Input</label>
+        <p class="mg-b-20 mg-sm-b-40">A basic form control with disabled and readonly mode.</p> -->
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="form-group">
+              <label class="form-control-label">Impact Study Title:
+                <span class="tx-danger">*</span>
+              </label>
+              <input class="form-control" type="text" name="title" value="" placeholder="Impact Study Title">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="form-group">
+              <label class="form-control-label">Impact Study Description:
+                <span class="tx-danger">*</span>
+              </label>
+              <textarea style="height:42px;min-height:42px;" class="form-control" name="Description" value="" placeholder="Impact Study Description"></textarea>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="form-group">
+              <label class="form-control-label">Impact Study Title:
+                <span class="tx-danger">*</span>
+              </label>
+              <select multiple class="form-control models">
+                <!-- <option>Value 1</option> -->
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="form-group">
+              <label class="form-control-label">Cover End Date:
+                <span class="tx-danger">*</span>
+              </label>
+              <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                  <input type='text' class="form-control" />
+                  <span class="input-group-addon">
+                    <span class="fa fa-calendar"></span>
+                  </span>
+                </div>
+              </div>
+              <!-- <input class="form-control datepicker" type="text" name="title" value="" placeholder="Select Date"> -->
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="form-group">
+              <label class="form-control-label">Cover Source:
+                <span class="tx-danger">*</span>
+              </label>
+              <select class="form-control select2-dd">
+                <option>Live</option>
+                <option>Shadow</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="form-group">
+              <label class="form-control-label">Cover Model ID:
+                <span class="tx-danger">*</span>
+              </label>
+              <input class="form-control" type="text" name="modelID" value="" placeholder="Cover Model ID">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="form-group">
+              <label class="form-control-label">Config Tables:
+                <span class="tx-danger">*</span>
+              </label>
+              <select class="form-control select2-dd">
+                <option>Live</option>
+                <option>Shadow</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="form-group">
+              <label class="form-control-label">AP:
+                <span class="tx-danger">*</span>
+              </label>
+              <select class="form-control select2-dd">
+                <option>Prod</option>
+                <option>Beta</option>
+                <option>Delta</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="form-group">
+              <label class="form-control-label">AP Bounce:
+                <span class="tx-danger">*</span>
+              </label>
+              <select class="form-control select2-dd">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="form-group">
+              <label class="form-control-label">Memcache Bounce:
+                <span class="tx-danger">*</span>
+              </label>
+              <select class="form-control select2-dd">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="form-group">
+              <label class="form-control-label">Time Series Date:
+                <span class="tx-danger">*</span>
+              </label>
+              <div class="form-group">
+                <div class='input-group date' id='datetimepicker2'>
+                  <input type='text' class="form-control" />
+                  <span class="input-group-addon">
+                    <span class="fa fa-calendar"></span>
+                  </span>
+                </div>
+              </div>
+              <!-- <input class="form-control datepicker" type="text" name="title" value="" placeholder="Select Date"> -->
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="form-group">
+              <label class="form-control-label">Generate PData Files:
+                <span class="tx-danger">*</span>
+              </label>
+              <select class="form-control select2-dd">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="form-group">
+              <label class="form-control-label">Sync STress Test Scenario:
+                <span class="tx-danger">*</span>
+              </label>
+              <select class="form-control select2-dd">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="form-group">
+              <label class="form-control-label">Use Indicative Cache:
+                <span class="tx-danger">*</span>
+              </label>
+              <select class="form-control select2-dd">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="form-group">
+              <label class="form-control-label">ion-ios-bolt:
+                <span class="tx-danger">*</span>
+              </label>
+              <select class="form-control select2-dd">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="form-group">
+              <label class="form-control-label">Post Process:
+                <span class="tx-danger">*</span>
+              </label>
+              <select class="form-control select2-dd">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="form-group">
+              <label class="form-control-label">Account to Run:
+                <span class="tx-danger">*</span>
+              </label>
+              <select class="form-control account-run select2-dd">
+                <option>
+                  <a href="#modaldemo8" class="modal-effect btn btn-primary btn-block" data-toggle="modal" data-effect="effect-just-me">All Accounts</a>
+                </option>
+                <option>
+                  <a href="#modaldemo8" class="modal-effect btn btn-primary btn-block" data-toggle="modal" data-effect="effect-just-me">Enter No. of Accounts</a>
+                </option>
+                <option>
+                  <a href="#modaldemo8" class="modal-effect btn btn-primary btn-block" data-toggle="modal" data-effect="effect-just-me">Enter list of Accounts</a>
+                </option>
+
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="form-group">
+              <label class="form-control-label">Paenv File:
+                <span class="tx-danger">*</span>
+              </label>
+              <input class="form-control" type="text" name="modelID" value="" placeholder="Paenv File">
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <a href="ImpactStudyList.html" class="btn btn-primary">Back</a>
+            <a href="ConfigurationParameters.html" class="btn btn-primary pull-right">Next</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slim-footer">
+      <div class="container">
+        <p>Copyright 2018 &copy; All Rights Reserved.</p>
+      </div>
+    </div>
+    <!-- MODAL EFFECTS -->
+    <div id="modaldemo8" class="modal fade flip-horizontal">
+      <div class="modal-dialog modal-sm modal-dialog-vertical-center" role="document">
+        <div class="modal-content bd-0 tx-14">
+          <div class="modal-header pd-y-20 pd-x-25">
+            <h6 class="tx-14 mg-b-0 tx-uppercase tx-inverse tx-bold">Enter Number of Accounts</h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- <h5 class="lh-3 mg-b-20 tx-inverse">Why We Use Electoral College, Not Popular Vote</h5> -->
+            <input class="form-control" type="text" name="accounts" value="" placeholder="Enter Number of Accounts">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+      <!-- modal-dialog -->
+    </div>
+    <!-- MODAL EFFECTS -->
+    <div id="modaldemo9" class="modal fade flip-horizontal">
+      <div class="modal-dialog modal-lg modal-dialog-vertical-center" role="document">
+        <div class="modal-content bd-0 tx-14">
+          <div class="modal-header pd-y-20 pd-x-25">
+            <h6 class="tx-14 mg-b-0 tx-uppercase tx-inverse tx-bold">Models Details</h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body pd-25">
+            <div class="table-responsive">
+              <table class="table mg-b-0">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Value</th>
+                    <th>Heading</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Tiger Nixon</td>
+                    <td>
+                      <select class="form-control select2-dd">
+                        <option>Value 1</option>
+                        <option>Value 2</option>
+                        <option>Value 3</option>
+                        <option>Value 4</option>
+                        <option>Value 5</option>
+                      </select>
+                    </td>
+                    <td>Val</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Garrett Winters</td>
+                    <td>
+                      <select class="form-control select2-dd">
+                        <option>Value1</option>
+                        <option>Value 2</option>
+                        <option>Value 3</option>
+                        <option>Value 4</option>
+                        <option>Value 5</option>
+                      </select>
+                    </td>
+                    <td>Val</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Ashton Cox</td>
+                    <td>
+                      <select class="form-control select2-dd">
+                        <option>Value 1</option>
+                        <option>Value 2</option>
+                        <option>Value 3</option>
+                        <option>Value 4</option>
+                        <option>Value 5</option>
+                      </select>
+                    </td>
+                    <td>Val</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Cedric Kelly</td>
+                    <td>
+                      <select class="form-control select2-dd">
+                        <option>Value 1</option>
+                        <option>Value 2</option>
+                        <option>Value 3</option>
+                        <option>Value 4</option>
+                        <option>Value 5</option>
+                      </select>
+                    </td>
+                    <td>Val</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Airi Satou</td>
+                    <td><select class="form-control select2-dd">
+                      <option>Value 1</option>
+                      <option>Value 2</option>
+                      <option>Value 3</option>
+                      <option>Value 4</option>
+                      <option>Value 5</option>
+                    </select></td>
+                    <td>Val</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+      <!-- modal-dialog -->
+    </div>
+    <!-- modal -->
+  </div>
+  <!-- modal -->
+  <script src="js/jquery.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/jquery.cookie.js"></script>
+  <script src="js/toggles.min.js"></script>
+  <script src="js/jquery.timepicker.js"></script>
+  <script src="js/spectrum.js"></script>
+  <script src="js/jquery.maskedinput.js"></script>
+  <script src="js/bootstrap-tagsinput.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap-tokenfield.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/select2.full.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script>
+    $(function () {
+
+      // showing modal with effect
+      $('.models').on("select2:select", function () {
+        $('#modaldemo9').addClass("show").css({
+          "display": "block",
+          "padding-right": "17px",
+          "background": "rgba(0, 0, 0, 0.5)"
+        });
+      })
+      $('.select2-dd').on('change', function () {
+        var ddVal = $(".account-run").val();
+        if (ddVal == "Enter No. of Accounts") {
+          $('.modal .modal-header h6').html("Enter No. of Accounts")
+          $('.modal .modal-body input').attr("placeholder", "Enter No. of Accounts")
+          $('#modaldemo8').addClass("show").css({
+            "display": "block",
+            "padding-right": "17px",
+            "background": "rgba(0, 0, 0, 0.5)"
+          });
+        }
+        if (ddVal == "Enter list of Accounts") {
+          $('.modal .modal-header h6').html("Enter List of Accounts")
+          $('.modal .modal-body input').attr("placeholder", "Enter List of Accounts")
+          $('#modaldemo8').addClass("show").css({
+            "display": "block",
+            "padding-right": "17px",
+            "background": "rgba(0, 0, 0, 0.5)"
+          });
+        }
+      });
+      $('.modal button[data-dismiss="modal"]').on('click', function (e) {
+        $('#modaldemo8,#modaldemo9').removeClass("show").css({
+          "display": "none",
+          "padding-right": "0",
+          "background": "transparent"
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

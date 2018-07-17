@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description">
+  <meta name="author" content="Sanjay Singh Bisht">
+  <title> Proteus Impact Study</title>
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <link href="css/ionicons.css" rel="stylesheet">
+  <link href="css/toggles-full.css" rel="stylesheet">
+  <link href="css/jquery.timepicker.css" rel="stylesheet">
+  <link href="css/spectrum.css" rel="stylesheet">
+  <link href="css/bootstrap-tagsinput.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/slim.css">
+  <link rel="stylesheet" href="css/bootstrap-tokenfield.css">
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!-- Data Table Css -->
+  <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" type="text/css" href="css/buttons.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.dataTables.css">
+</head>
+
+<body>
+  <div class="slim-header">
+    <div class="container">
+      <div class="slim-header-left">
+        <h2 class="slim-logo">
+          <a href="index.html">Proteus
+          </a>
+        </h2>
+      </div>
+      <div class="slim-header-right">
+        <div class="dropdown dropdown-c">
+          <a href="#" class="logged-user" data-toggle="dropdown">
+            <img src="img/User.jpg" alt="">
+            <span>Username</span>
+            <i class="fa fa-angle-down"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <nav class="nav">
+              <a href="page-profile.html" class="nav-link">
+                <i class="icon ion-person"></i> View Profile</a>
+              <a href="page-edit-profile.html" class="nav-link">
+                <i class="icon ion-compose"></i> Edit Profile</a>
+              <a href="page-activity.html" class="nav-link">
+                <i class="icon ion-ios-bolt"></i> Activity Log</a>
+              <a href="page-settings.html" class="nav-link">
+                <i class="icon ion-ios-gear"></i> Account Settings</a>
+              <a href="page-signin.html" class="nav-link">
+                <i class="icon ion-forward"></i> Sign Out</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slim-navbar">
+    <div class="container">
+      <ul class="nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="ImpactStudyList.html">
+            <i class="icon ion-ios-list"></i>
+            <span>List of Impact Studies</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ImpactStudyForm.html">
+            <i class="icon ion-ios-paper"></i>
+            <span>Impact Study Form</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="slim-mainpanel">
+    <div class="container">
+      <div class="slim-pageheader" style="flex-direction: row">
+        <!-- <ol class="breadcrumb slim-breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#">Forms</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Form Elements</li>
+        </ol> -->
+        <h6 class="slim-pagetitle">List of Impact Studies</h6>
+        <a href="ImpactStudyForm.html" class="btn btn-primary">Create New Impact Study</a>
+      </div>
+      <div class="section-wrapper">
+        <!-- <label class="section-title">Basic Form Input</label>
+        <p class="mg-b-20 mg-sm-b-40">A basic form control with disabled and readonly mode.</p> -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="dt-responsive table-responsive">
+              <table id="basic-btn-1" class="table export-btn-table table-striped table-bordered nowrap">
+                <thead>
+                  <tr>
+                    <th>Sr. No</th>
+                    <th>ID</th>
+                    <th>Title Details</th>
+                    <th class="text-center">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>11</td>
+                    <td>Model Name Details 1</td>
+                    <td class="text-center">
+                      <a class="text-success" href="ImpactStudyForm.html">
+                        <i class="fa fa-eye" aria-hidden="true"></i> View</a>
+                      <a class="text-info" href="ImpactStudyForm.html">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
+                      <a class="text-danger" href="ImpactStudyForm.html">
+                        <i class="fa fa-files-o" aria-hidden="true"></i> Clone</a>
+                        <a class="text-success" ><i class="fa fa-play-circle-o run-imapct-study" aria-hidden="true"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>1221</td>
+                    <td>Model Name Details 1</td>
+                    <td class="text-center">
+                      <a class="text-success" href="ImpactStudyForm.html">
+                        <i class="fa fa-eye" aria-hidden="true"></i> View</a>
+                      <a class="text-info" href="ImpactStudyForm.html">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
+                      <a class="text-danger" href="ImpactStudyForm.html">
+                        <i class="fa fa-files-o" aria-hidden="true"></i> Clone</a>
+                        <a class="text-success" ><i class="fa fa-play-circle-o run-imapct-study" aria-hidden="true"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>1321</td>
+                    <td>Model Name Details 1</td>
+                    <td class="text-center">
+                      <a class="text-success" href="ImpactStudyForm.html">
+                        <i class="fa fa-eye" aria-hidden="true"></i> View</a>
+                      <a class="text-info" href="ImpactStudyForm.html">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
+                      <a class="text-danger" href="ImpactStudyForm.html">
+                        <i class="fa fa-files-o" aria-hidden="true"></i> Clone</a>
+                        <a class="text-success" ><i class="fa fa-play-circle-o run-imapct-study" aria-hidden="true"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>114</td>
+                    <td>Model Name Details 1</td>
+                    <td class="text-center">
+                      <a class="text-success" href="ImpactStudyForm.html">
+                        <i class="fa fa-eye" aria-hidden="true"></i> View</a>
+                      <a class="text-info" href="ImpactStudyForm.html">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
+                      <a class="text-danger" href="ImpactStudyForm.html">
+                        <i class="fa fa-files-o" aria-hidden="true"></i> Clone</a>
+                        <a class="text-success" ><i class="fa fa-play-circle-o run-imapct-study" aria-hidden="true"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>161</td>
+                    <td>Model Name Details 1</td>
+                    <td class="text-center">
+                      <a class="text-success" href="ImpactStudyForm.html">
+                        <i class="fa fa-eye" aria-hidden="true"></i> View</a>
+                      <a class="text-info" href="ImpactStudyForm.html">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
+                      <a class="text-danger" href="ImpactStudyForm.html">
+                        <i class="fa fa-files-o" aria-hidden="true"></i> Clone</a>
+                        <a class="text-success" ><i class="fa fa-play-circle-o run-imapct-study" aria-hidden="true"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>16</td>
+                    <td>Model Name Details 1</td>
+                    <td class="text-center">
+                      <a class="text-success" href="ImpactStudyForm.html">
+                        <i class="fa fa-eye" aria-hidden="true"></i> View</a>
+                      <a class="text-info" href="ImpactStudyForm.html">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
+                      <a class="text-danger" href="ImpactStudyForm.html">
+                        <i class="fa fa-files-o" aria-hidden="true"></i> Clone</a>
+                        <a class="text-success" ><i class="fa fa-play-circle-o run-imapct-study" aria-hidden="true"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>17</td>
+                    <td>Model Name Details 1</td>
+                    <td class="text-center">
+                      <a class="text-success" href="ImpactStudyForm.html">
+                        <i class="fa fa-eye" aria-hidden="true"></i> View</a>
+                      <a class="text-info" href="ImpactStudyForm.html">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
+                      <a class="text-danger" href="ImpactStudyForm.html">
+                        <i class="fa fa-files-o" aria-hidden="true"></i> Clone</a>
+                        <a class="text-success" ><i class="fa fa-play-circle-o run-imapct-study" aria-hidden="true"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>11</td>
+                    <td>Model Name Details 1</td>
+                    <td class="text-center">
+                      <a class="text-success" href="ImpactStudyForm.html">
+                        <i class="fa fa-eye" aria-hidden="true"></i> View</a>
+                      <a class="text-info" href="ImpactStudyForm.html">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
+                      <a class="text-danger" href="ImpactStudyForm.html">
+                        <i class="fa fa-files-o" aria-hidden="true"></i> Clone</a>
+                        <a class="text-success" ><i class="fa fa-play-circle-o run-imapct-study" aria-hidden="true"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>1991</td>
+                    <td>Model Name Details 1</td>
+                    <td class="text-center">
+                      <a class="text-success" href="ImpactStudyForm.html">
+                        <i class="fa fa-eye" aria-hidden="true"></i> View</a>
+                      <a class="text-info" href="ImpactStudyForm.html">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
+                      <a class="text-danger" href="ImpactStudyForm.html">
+                        <i class="fa fa-files-o" aria-hidden="true"></i> Clone</a>
+                        <a class="text-success" ><i class="fa fa-play-circle-o run-imapct-study" aria-hidden="true"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>101</td>
+                    <td>Model Name Details 1</td>
+                    <td class="text-center">
+                      <a class="text-success" href="ImpactStudyForm.html">
+                        <i class="fa fa-eye" aria-hidden="true"></i> View</a>
+                      <a class="text-info" href="ImpactStudyForm.html">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
+                      <a class="text-danger" href="ImpactStudyForm.html">
+                        <i class="fa fa-files-o" aria-hidden="true"></i> Clone</a>
+                        <a class="text-success" ><i class="fa fa-play-circle-o run-imapct-study" aria-hidden="true"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>1111</td>
+                    <td>Model Name Details 1</td>
+                    <td class="text-center">
+                      <a class="text-success" href="ImpactStudyForm.html">
+                        <i class="fa fa-eye" aria-hidden="true"></i> View</a>
+                      <a class="text-info" href="ImpactStudyForm.html">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
+                      <a class="text-danger" href="ImpactStudyForm.html">
+                        <i class="fa fa-files-o" aria-hidden="true"></i> Clone</a>
+                        <a class="text-success" ><i class="fa fa-play-circle-o run-imapct-study" aria-hidden="true"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>211</td>
+                    <td>Model Name Details 1</td>
+                    <td class="text-center">
+                      <a class="text-success" href="ImpactStudyForm.html">
+                        <i class="fa fa-eye" aria-hidden="true"></i> View</a>
+                      <a class="text-info" href="ImpactStudyForm.html">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
+                      <a class="text-danger" href="ImpactStudyForm.html">
+                        <i class="fa fa-files-o" aria-hidden="true"></i> Clone</a>
+                        <a class="text-success" ><i class="fa fa-play-circle-o run-imapct-study" aria-hidden="true"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>311</td>
+                    <td>Model Name Details 1</td>
+                    <td class="text-center">
+                      <a class="text-success" href="ImpactStudyForm.html">
+                        <i class="fa fa-eye" aria-hidden="true"></i> View</a>
+                      <a class="text-info" href="ImpactStudyForm.html">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
+                      <a class="text-danger" href="ImpactStudyForm.html">
+                        <i class="fa fa-files-o" aria-hidden="true"></i> Clone</a>
+                        <a class="text-success" ><i class="fa fa-play-circle-o run-imapct-study" aria-hidden="true"></i></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slim-footer">
+      <div class="container">
+        <p>Copyright 2018 &copy; All Rights Reserved.</p>
+      </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/toggles.min.js"></script>
+    <script src="js/jquery.timepicker.js"></script>
+    <script src="js/spectrum.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/bootstrap-tagsinput.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap-tokenfield.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <!-- data-table js -->
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.buttons.min.js"></script>
+    <script src="js/buttons.print.min.js"></script>
+    <script src="js/buttons.html5.min.js"></script>
+    <script src="js/dataTables.bootstrap4.min.js"></script>
+    <script src="js/dataTables.responsive.min.js"></script>
+    <script src="js/responsive.bootstrap4.min.js"></script>
+    <script src="js/extension-btns-custom.js"></script>
+    <script src="js/buttons.colVis.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        var width = $(window).width();
+        if (width <= 768) {
+          $('#basic-btn-1').DataTable({
+            responsive: true,
+            dom: 'Bfrtip',
+            buttons: [
+                // 'copy', 'csv', 'excel', 'pdf', 'print', 'pageLength', 'colvis'
+            ],
+            oLanguage: {
+              sLengthMenu: " _MENU_ ",
+              sSearch: "",
+              sSearchPlaceholder: "Search",
+            }
+          });
+        } else {
+          $('#basic-btn-1').DataTable({
+            dom: 'Bfrtip',
+            buttons: [
+              //  'copy', 'csv', 'excel', 'pdf', 'print', 'pageLength', 'colvis'
+            ],
+            responsive: false,
+          });
+        }
+      });
+    </script>
+</body>
+
+</html>

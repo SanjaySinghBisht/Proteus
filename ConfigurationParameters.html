@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description">
+  <meta name="author" content="Sanjay Singh Bisht">
+  <title> Proteus Impact Study</title>
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <link href="css/ionicons.css" rel="stylesheet">
+  <link href="css/toggles-full.css" rel="stylesheet">
+  <link href="css/jquery.timepicker.css" rel="stylesheet">
+  <link href="css/spectrum.css" rel="stylesheet">
+  <link href="css/bootstrap-tagsinput.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/slim.css">
+  <link rel="stylesheet" href="css/bootstrap-tokenfield.css">
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!-- Data Table Css -->
+  <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" type="text/css" href="css/buttons.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.dataTables.css">
+</head>
+
+<body>
+  <div class="slim-header">
+    <div class="container">
+      <div class="slim-header-left">
+        <h2 class="slim-logo">
+          <a href="index.html">Proteus
+          </a>
+        </h2>
+      </div>
+      <div class="slim-header-right">
+        <div class="dropdown dropdown-c">
+          <a href="#" class="logged-user" data-toggle="dropdown">
+            <img src="img/User.jpg" alt="">
+            <span>Username</span>
+            <i class="fa fa-angle-down"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <nav class="nav">
+              <a href="page-profile.html" class="nav-link">
+                <i class="icon ion-person"></i> View Profile</a>
+              <a href="page-edit-profile.html" class="nav-link">
+                <i class="icon ion-compose"></i> Edit Profile</a>
+              <a href="page-activity.html" class="nav-link">
+                <i class="icon ion-ios-bolt"></i> Activity Log</a>
+              <a href="page-settings.html" class="nav-link">
+                <i class="icon ion-ios-gear"></i> Account Settings</a>
+              <a href="page-signin.html" class="nav-link">
+                <i class="icon ion-forward"></i> Sign Out</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slim-navbar">
+    <div class="container">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="ImpactStudyList.html">
+            <i class="icon ion-ios-list"></i>
+            <span>List of Impact Studies</span>
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="ImpactStudyForm.html">
+            <i class="icon ion-ios-paper"></i>
+            <span>Impact Study Form</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="slim-mainpanel">
+    <div class="container">
+      <div class="manager-header">
+        <div class="slim-pageheader" style="flex-direction: row">
+          <!-- <ol class="breadcrumb slim-breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="#">Pages</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Contact Manager</li>
+      </ol> -->
+          <h6 class="slim-pagetitle">Config Parameters</h6>
+        </div>
+        <!-- slim-pageheader -->
+        <a id="contactNavicon" href="#" class="contact-navicon">
+          <i class="icon ion-navicon-round"></i>
+        </a>
+      </div>
+      <!-- manager-header -->
+
+      <div class="manager-wrapper">
+        <div class="manager-right">
+          <div class="row row-sm">
+            <div class="col-md-12 config-details">
+              <div class="form-layout form-layout-4">
+                <div class="row">
+                  <label class="col-sm-4 form-control-label">Name:
+                    <span class="tx-danger">*</span>
+                  </label>
+                  <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                    <input type="text" id="name" class="form-control" placeholder="Enter Name">
+                  </div>
+                </div>
+                <!-- row -->
+                <div class="row mg-t-20">
+                  <label class="col-sm-4 form-control-label">Link:
+                    <span class="tx-danger">*</span>
+                  </label>
+                  <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                    <input type="text" id="link" class="form-control" placeholder="Enter Link">
+                  </div>
+                </div>
+                <div class="row mg-t-20">
+                  <label class="col-sm-4 form-control-label">Heading:
+                    <span class="tx-danger">*</span>
+                  </label>
+                  <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                    <input type="text" class="form-control" placeholder="Enter Value">
+                  </div>
+                </div>
+                <div class="row mg-t-20">
+                  <label class="col-sm-4 form-control-label">Heading:
+                    <span class="tx-danger">*</span>
+                  </label>
+                  <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                    <input type="text" class="form-control" placeholder="Enter Value">
+                  </div>
+                </div>
+                <div class="row mg-t-20">
+                  <label class="col-sm-4 form-control-label">Heading:
+                    <span class="tx-danger">*</span>
+                  </label>
+                  <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                    <input type="text" class="form-control" placeholder="Enter Value">
+                  </div>
+                </div>
+                <div class="row mg-t-20">
+                  <label class="col-sm-4 form-control-label">Heading:
+                    <span class="tx-danger">*</span>
+                  </label>
+                  <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                    <input type="text" class="form-control" placeholder="Enter Value">
+                  </div>
+                </div>
+                <div class="row mg-t-20">
+                  <label class="col-sm-4 form-control-label">Heading:
+                    <span class="tx-danger">*</span>
+                  </label>
+                  <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                    <input type="text" class="form-control" placeholder="Enter Value">
+                  </div>
+                </div>
+                <div class="row mg-t-20">
+                  <label class="col-sm-4 form-control-label">Heading:
+                    <span class="tx-danger">*</span>
+                  </label>
+                  <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                    <input type="text" class="form-control" placeholder="Enter Value">
+                  </div>
+                </div>
+                <div class="row mg-t-20">
+                  <label class="col-sm-4 form-control-label">Heading:
+                    <span class="tx-danger">*</span>
+                  </label>
+                  <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                    <input type="text" class="form-control" placeholder="Enter Value">
+                  </div>
+                </div>
+                <div class="row mg-t-20">
+                  <label class="col-sm-4 form-control-label">Heading:
+                    <span class="tx-danger">*</span>
+                  </label>
+                  <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                    <input type="text" class="form-control" placeholder="Enter Value">
+                  </div>
+                </div>
+                <div class="row mg-t-20">
+                  <label class="col-sm-4 form-control-label">Heading:
+                    <span class="tx-danger">*</span>
+                  </label>
+                  <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                    <input type="text" class="form-control" placeholder="Enter Value">
+                  </div>
+                </div>
+                <div class="row mg-t-20">
+                  <label class="col-sm-4 form-control-label">Heading:
+                    <span class="tx-danger">*</span>
+                  </label>
+                  <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                    <input type="text" class="form-control" placeholder="Enter Value">
+                  </div>
+                </div>
+                <div class="row mg-t-20">
+                  <label class="col-sm-4 form-control-label">Heading:
+                    <span class="tx-danger">*</span>
+                  </label>
+                  <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                    <input type="text" class="form-control" placeholder="Enter Value">
+                  </div>
+                </div>
+                <div class="row mg-t-20">
+                  <label class="col-sm-4 form-control-label">Heading:
+                    <span class="tx-danger">*</span>
+                  </label>
+                  <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                    <input type="text" class="form-control" placeholder="Enter Value">
+                  </div>
+                </div>
+                <div class="row mg-t-20">
+                  <label class="col-sm-4 form-control-label">Heading:
+                    <span class="tx-danger">*</span>
+                  </label>
+                  <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                    <input type="text" class="form-control" placeholder="Enter Value">
+                  </div>
+                </div>
+                <div class="row mg-t-20">
+                  <label class="col-sm-4 form-control-label">Heading:
+                    <span class="tx-danger">*</span>
+                  </label>
+                  <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                    <input type="text" class="form-control" placeholder="Enter Value">
+                  </div>
+                </div>
+                 
+                <div class="form-layout-footer mg-t-30 text-right">
+                  <button class="btn btn-primary bd-0">Submit Form</button>
+                  <button class="btn btn-secondary bd-0">Cancel</button>
+                </div>
+                <!-- form-layout-footer -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- manager-right -->
+        <div class="manager-left">
+          <nav class="nav config-parameters">
+
+          </nav>
+        </div>
+        <!-- manager-left -->
+      </div>
+      <!-- manager-wrapper -->
+
+    </div>
+    <div class="slim-footer">
+      <div class="container">
+        <p>Copyright 2018 &copy; All Rights Reserved.</p>
+      </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/toggles.min.js"></script>
+    <script src="js/jquery.timepicker.js"></script>
+    <script src="js/spectrum.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/bootstrap-tagsinput.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap-tokenfield.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/configurationParameter.js"></script>
+</body>
+
+</html>
